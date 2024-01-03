@@ -1,0 +1,144 @@
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+/* Individual Slides */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 0.5s, transform 0.5s; 
+}
+
+/* Active Slide */
+.slide.active {
+    opacity: 1; 
+}
+
+/* Slide Text */
+.slide-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+    & h2 {
+        font-family: 'Abril Fatface', serif;
+        font-size: 136px;
+        line-height: 0.9;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::after {
+            border-top: 2px solid;
+            content: "";
+            left: -18px;
+            position: absolute;
+            top: 233px;
+            width: 130px;
+        }
+    }
+
+    & p {
+        width: 410px;
+        margin-bottom: 0;
+
+        &::after {
+            border-top: 2px solid;
+            bottom: -27px;
+            content: "";
+            position: absolute;
+            right: -11px;
+            width: 230px;
+        }
+    }
+}
+
+/* Indicators */
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.indicator.active {
+    background-color: $w; 
+    opacity: 1;
+}
+
+/* Controls (Optional) */
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    
+}
+
+.controls div {
+    cursor: pointer;
+    margin: 0 20px;
+    color: white; 
+    font-size: 44px; 
+    opacity: 0.1;
+    @include tall;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+/* Контейнер изображения */
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+/* Анимация масштабирования для активного слайда */
+.slide.active .slide-image {
+    animation: scale 5s infinite;
+}
+
+/* Ключевые кадры для анимации scale */
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+

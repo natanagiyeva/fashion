@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* line 3, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 8, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
+body {
+  color: #767676;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 16, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Slider Container */
+/* line 2, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+/* Individual Slides */
+/* line 10, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Active Slide */
+/* line 23, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide.active {
+  opacity: 1;
+}
+
+/* Slide Text */
+/* line 28, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+/* line 36, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-text h2 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 136px;
+  line-height: 0.9;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 43, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-text h2::after {
+  border-top: 2px solid;
+  content: "";
+  left: -18px;
+  position: absolute;
+  top: 233px;
+  width: 130px;
+}
+
+/* line 53, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-text p {
+  width: 410px;
+  margin-bottom: 0;
+}
+
+/* line 57, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-text p::after {
+  border-top: 2px solid;
+  bottom: -27px;
+  content: "";
+  position: absolute;
+  right: -11px;
+  width: 230px;
+}
+
+/* Indicators */
+/* line 69, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+/* line 77, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+/* line 87, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.indicator.active {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/* Controls (Optional) */
+/* line 93, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+/* line 103, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.controls div {
+  cursor: pointer;
+  margin: 0 20px;
+  color: white;
+  font-size: 44px;
+  opacity: 0.1;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 111, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.controls div:hover {
+  opacity: 1;
+}
+
+/* Контейнер изображения */
+/* line 118, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+}
+
+/* Анимация масштабирования для активного слайда */
+/* line 130, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+.slide.active .slide-image {
+  animation: scale 5s infinite;
+}
+
+/* Ключевые кадры для анимации scale */
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

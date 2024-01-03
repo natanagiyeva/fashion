@@ -1,0 +1,23 @@
+@import "var";
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	color: $gray;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+  	font-family: 'Poppins', sans-serif;
+  	font-weight: 600;
+}
+
+// import blocks
+@import "blocks/slider";
