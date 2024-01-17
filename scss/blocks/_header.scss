@@ -1,0 +1,122 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    height: 120px;
+    width: 100%;
+
+    &__logo {
+        position: relative;
+        height: 120px;
+        width: 120px;
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__nav {
+        & ul {
+            display: flex;
+            justify-content: start;
+            list-style: none;
+            margin: 0;
+
+            & li {
+                margin-right: 30px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                line-height: 120px;
+
+                & a {
+                    color: $w;
+                    @include tall;
+
+                    &:hover {
+                        color: $gold;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        margin: auto 0;
+
+        a {
+            color: $w;
+        }
+
+        & i {
+            color: $w;
+            font-size: 24px;
+        }
+    }
+
+    &__search {
+        & input {
+            margin-right: 30px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $w;
+            color: $w;
+            font-size: 18px;
+            text-align: right;
+            width: 200px;
+            outline: none;
+            height: 30px;
+            
+            &::placeholder {
+                color: $w;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__profile {
+        display: block;
+        margin-right: 30px;
+        
+    }
+
+    &__cart {
+        display: block;
+        position: relative;
+        margin-right: 30px;
+
+        
+
+        &-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: $gold;
+            color: $w;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 16px;
+            font-size: 9px;
+        }
+    }
+
+    &__signup {
+        display: block;
+        margin-right: 30px;
+        color: $w;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 10px 25px;
+        background-color: $black;
+        @include tall;
+        line-height: 1;
+
+        &:hover {
+            background-color: $gold;
+        }
+    }
+}

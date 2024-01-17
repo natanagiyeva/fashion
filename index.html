@@ -24,40 +24,304 @@
 </head>
 <body>
 	
-	<!-- Slider -->
-	<div class="slider">
-		<div class="slide active">
-			<div class="slide-image" style="background-image: url('img/slider/h1-s1.webp');"></div>
-			<div class="slide-text">
-				<h2>NEW<br>IN</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+	<div class="intro">
+		<header class="header">
+			<div class="container-fluid d-flex justify-content-between">
+				<div class="header__left d-flex">
+					<div class="header__logo">
+						<a href="index.html">
+							<img src="img/logo-light.svg" alt="Logo">
+						</a>
+					</div>
+					<div class="header__nav">
+						<nav>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Collections</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__right d-flex justify-content-end">
+					<div class="header__search">
+						<input type="text" placeholder="Search">
+					</div>
+					<a href="#" class="header__profile">
+
+							<i class="bi bi-person"></i>
+
+					</a>
+					<a class="header__cart" href="#">
+					
+							<i class="bi bi-cart3"></i>
+							<span class="header__cart-count">3</span>
+			
+					</a>
+					<a href="#" class="header__signup">Sign up</a>
+				</div>
 			</div>
-		</div>
-		<div class="slide">
-			<div class="slide-image" style="background-image: url('img/slider/h1-s2.webp');"></div>
-			<div class="slide-text">
-				<h2>NEW<br>IN</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+
+		</header>
+
+		<!-- Slider -->
+		<div class="slider">
+			<div class="slide active">
+				<div class="slide-image" style="background-image: url('img/slider/h1-s1.webp');"></div>
+				<div class="slide-text">
+					<h2>NEW<br>IN</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+				</div>
 			</div>
-		</div>
-		<div class="slide">
-			<div class="slide-image" style="background-image: url('img/slider/h1-s3.webp');"></div>
-			<div class="slide-text">
-				<h2>NEW<br>IN</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+			<div class="slide">
+				<div class="slide-image" style="background-image: url('img/slider/h1-s2.webp');"></div>
+				<div class="slide-text">
+					<h2>NEW<br>IN</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+				</div>
 			</div>
-		</div>
-	
-		<!-- Slide indicators -->
-		<div class="indicators"></div>
-	
-		<!-- Slide controls (optional) -->
-		<div class="controls">
-			<div class="prev"><i class="bi bi-arrow-left-square-fill"></i></div>
-			<div class="next"><i class="bi bi-arrow-right-square-fill"></i></div>
+			<div class="slide">
+				<div class="slide-image" style="background-image: url('img/slider/h1-s3.webp');"></div>
+				<div class="slide-text">
+					<h2>NEW<br>IN</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra Enim in morbi tincidunt ante luctus</p>
+				</div>
+			</div>
+		
+			<!-- Slide indicators -->
+			<div class="indicators"></div>
+		
+			<!-- Slide controls (optional) -->
+			<div class="controls">
+				<div class="prev"><i class="bi bi-arrow-left-square-fill"></i></div>
+				<div class="next"><i class="bi bi-arrow-right-square-fill"></i></div>
+			</div>
 		</div>
 	</div>
 	
+	<!-- collection slider -->
+	<section class="collection">
+
+			<!-- Slider -->
+			<div class="slider2">
+				<div class="slider2__item">
+					<div class="slider2__item__img">
+						<img src="img/slider2/cs1-s1.webp" alt="">
+					</div>
+					<div class="slider2__item__card">
+						<span>Collection 2022</span>
+						<h2>The spectacle before us was indeed sublime</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.</p>
+					</div>
+				</div>
+				<div class="slider2__item hidden">
+					<div class="slider2__item__img">
+						<img src="img/slider2/h1-s1.webp" alt="">
+					</div>
+					<div class="slider2__item__card">
+						<span>Collection 2022</span>
+						<h2>The spectacle before us was indeed sublime</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.</p>
+					</div>
+				</div>
+		
+				<!-- Arrows -->
+				<div class="controls2">
+					<div class="prev2">
+						<a href="#"><i class="bi bi-arrow-left"></i></a>
+					</div>
+					<div class="next2">
+						<a href="#"><i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+
+	</section>
+	
+	<!-- Best sellers -->
+	<section class="prod">
+		<div class="text-center">
+			<h2 class="prod-title">Best Sellers</h2>
+			<p class="prod-subtitle"> COLLECTION 2022 </p>
+		</div>
+		<div class="best">
+			<div class="container">
+				<div class="row">
+					<div class="best__item col-12 col-md-6 col-lg-4">
+						<div class="best__item-img">
+							<div class="best__item-img-one">
+								<img class="default-image" src="img/best/d1-1.webp">
+							</div>
+							<div class="best__item-img-two d-flex justify-content-center align-items-center" style="background-image: url('img/best/d1-2.webp');">
+
+								<div class="icons">
+									<i class="bi bi-zoom-in"></i>
+									<i class="bi bi-arrow-left-right"></i>
+								</div>
+							</div>
+							
+						</div>
+						<div class="best__item-info d-flex justify-content-between">
+							<div class="best__item-info-left">
+								<h4>
+									<a href="#">Strapless crop top</a>
+								</h4>
+								<p>£49.90</p>
+							</div>
+							<div class="best__item-info-right">
+								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
+								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="best__item col-12 col-md-6 col-lg-4">
+						<div class="best__item-img">
+							<div class="best__item-img-one">
+								<img class="default-image" src="img/best/d2-1.webp">
+							</div>
+							<div class="best__item-img-two d-flex justify-content-center align-items-center" style="background-image: url('img/best/d2-2.webp');">
+
+								<div class="icons">
+									<i class="bi bi-zoom-in"></i>
+									<i class="bi bi-arrow-left-right"></i>
+								</div>
+							</div>
+							
+						</div>
+						<div class="best__item-info d-flex justify-content-between">
+							<div class="best__item-info-left">
+								<h4>
+									<a href="#">Printed surplice blouse</a>
+								</h4>
+								<p>£49.90</p>
+							</div>
+							<div class="best__item-info-right">
+								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
+								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="best__item col-12 col-md-6 col-lg-4">
+						<div class="best__item-img">
+							<div class="best__item-img-one">
+								<img class="default-image" src="img/best/d3-1.webp">
+							</div>
+							<div class="best__item-img-two d-flex justify-content-center align-items-center" style="background-image: url('img/best/d3-2.webp');">
+
+								<div class="icons">
+									<i class="bi bi-zoom-in"></i>
+									<i class="bi bi-arrow-left-right"></i>
+								</div>
+							</div>
+							
+						</div>
+						<div class="best__item-info d-flex justify-content-between">
+							<div class="best__item-info-left">
+								<h4>
+									<a href="#">Rustic Blouse</a>
+								</h4>
+								<p>£49.90</p>
+							</div>
+							<div class="best__item-info-right">
+								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
+								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gridd">
+		
+		<div class="container-fluid p-0">
+			<div class="row g-1">
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="gridd__item">
+							
+						<img id="gridimg" src="img/gridd/g1.webp" alt="01">
+						
+						<div class="gridd__item-content">
+							<h4>SHIRTS | TOPS</h4>
+							<div class="meta">
+								<a href="#" class="meta-link">Midi</a>
+								<a href="#" class="meta-link">Maxi</a>
+								<a href="#" class="viewall">View All</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="gridd__item">
+							
+						<img id="gridimg" src="img/gridd/g2.webp" alt="01">
+						
+						<div class="gridd__item-content">
+							<h4>SHIRTS | TOPS</h4>
+							<div class="meta">
+								<a href="#" class="meta-link">Midi</a>
+								<a href="#" class="meta-link">Maxi</a>
+								<a href="#" class="viewall">View All</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-8 col-lg-4">
+					<div class="gridd__item gridd__item-long">
+							
+						<img id="gridimg" src="img/gridd/g5.webp" alt="01">
+						
+						<div class="gridd__item-content">
+							<h4>SHIRTS | TOPS</h4>
+							<div class="meta">
+								<a href="#" class="meta-link">Midi</a>
+								<a href="#" class="meta-link">Maxi</a>
+								<a href="#" class="viewall">View All</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-8 col-lg-5">
+					<div class="gridd__item">
+							
+						<img id="gridimg" src="img/gridd/g3.webp" alt="01">
+						
+						<div class="gridd__item-content">
+							<h4>SHIRTS | TOPS</h4>
+							<div class="meta">
+								<a href="#" class="meta-link">Midi</a>
+								<a href="#" class="meta-link">Maxi</a>
+								<a href="#" class="viewall">View All</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="gridd__item">
+							
+						<img id="gridimg" src="img/gridd/g4.webp" alt="01">
+						
+						<div class="gridd__item-content">
+							<h4>SHIRTS | TOPS</h4>
+							<div class="meta">
+								<a href="#" class="meta-link">Midi</a>
+								<a href="#" class="meta-link">Maxi</a>
+								<a href="#" class="viewall">View All</a>
+							</div>
+						</div>
+					</div>
+	
+					
+	
+	
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 
 	<!-- js -->

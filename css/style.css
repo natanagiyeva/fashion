@@ -16,8 +16,18 @@ body {
 /* line 16, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  margin: 0;
+}
+
+/* line 22, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
+p {
+  margin: 0;
+}
+
+/* line 26, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/style.scss */
+a {
+  text-decoration: none;
 }
 
 /* Slider Container */
@@ -26,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* Adjust height as needed */
   overflow: hidden;
 }
 
@@ -159,11 +168,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-size: cover;
   background-position: center;
+  filter: brightness(50%);
   transition: transform 0.5s;
 }
 
 /* Анимация масштабирования для активного слайда */
-/* line 130, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
+/* line 133, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider.scss */
 .slide.active .slide-image {
   animation: scale 5s infinite;
 }
@@ -176,6 +186,518 @@ h1, h2, h3, h4, h5, h6 {
   to {
     transform: scale(1.1);
   }
+}
+
+/* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_intro.scss */
+.intro {
+  position: relative;
+}
+
+/* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header {
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  width: 100%;
+}
+
+/* line 7, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__logo {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+
+/* line 12, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 21, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__nav ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 27, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__nav ul li {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 120px;
+}
+
+/* line 34, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__nav ul li a {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 38, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__nav ul li a:hover {
+  color: #c2a18a;
+}
+
+/* line 46, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__right {
+  margin: auto 0;
+}
+
+/* line 49, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__right a {
+  color: #ffffff;
+}
+
+/* line 53, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__right i {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* line 60, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__search input {
+  margin-right: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: right;
+  width: 200px;
+  outline: none;
+  height: 30px;
+}
+
+/* line 72, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__search input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* line 79, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__profile {
+  display: block;
+  margin-right: 30px;
+}
+
+/* line 85, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__cart {
+  display: block;
+  position: relative;
+  margin-right: 30px;
+}
+
+/* line 92, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #c2a18a;
+  color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-size: 9px;
+}
+
+/* line 107, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__signup {
+  display: block;
+  margin-right: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 25px;
+  background-color: #333333;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+}
+
+/* line 118, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header__signup:hover {
+  background-color: #c2a18a;
+}
+
+/* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2 {
+  margin: 100px auto;
+  position: relative;
+}
+
+/* line 5, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2 i {
+  font-size: 30px;
+}
+
+/* line 9, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2 a {
+  color: #767676;
+}
+
+/* line 13, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item {
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: 100vh;
+}
+
+/* line 19, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 24, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* line 35, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item__card {
+  position: absolute;
+  right: -30%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 70px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  width: 50%;
+}
+
+/* line 45, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item__card span {
+  font-size: 16px;
+  color: #c2a18a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 52, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.slider2__item__card h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
+
+/* line 63, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.prev2 {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+}
+
+/* line 69, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.next2 {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* line 75, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.zoom {
+  animation: zoom 10s ease-in-out forwards;
+}
+
+@keyframes zoom {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 120%;
+    height: 120%;
+  }
+}
+
+/* line 85, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.fade-up {
+  animation: fade-up 1s ease-in-out forwards;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/* line 94, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
+.hidden {
+  display: none;
+}
+
+/* line 2, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_prod.scss */
+.prod-title {
+  font-size: 40px;
+  color: #333333;
+}
+
+/* line 7, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_prod.scss */
+.prod-subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #c2a18a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 16, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_prod.scss */
+.text-center {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+/* line 5, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+/* line 10, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-one {
+  opacity: 1;
+  height: 100%;
+}
+
+/* line 14, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* line 20, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-two {
+  overflow: hidden;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 31, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-two .icons {
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 35, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-two .icons i {
+  font-size: 14px;
+  color: #333333;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 44, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img-two .icons i:hover {
+  background-color: #c2a18a;
+  color: #ffffff;
+}
+
+/* line 54, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img:hover .icons {
+  margin-top: -20px;
+}
+
+/* line 58, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-img:hover .best__item-img-two {
+  opacity: 1;
+}
+
+/* line 64, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info {
+  margin-top: 10px;
+}
+
+/* line 67, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info-left a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* line 74, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info-left a:hover {
+  color: #c2a18a;
+}
+
+/* line 79, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info-left p {
+  color: #c2a18a;
+}
+
+/* line 85, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info-right a {
+  color: #c2a18a;
+}
+
+/* line 89, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+.best__item-info-right i {
+  font-size: 22px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 100, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+[data-tooltip] {
+  position: relative;
+}
+
+/* line 104, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* line 121, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_best.scss */
+[data-tooltip]:hover::before {
+  opacity: 1;
+}
+
+/* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd {
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+/* line 5, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd a {
+  color: #ffffff;
+}
+
+/* line 9, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item {
+  position: relative;
+  background-color: #765B48;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+/* line 16, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-long {
+  height: 705px;
+  margin-bottom: 0;
+}
+
+/* line 22, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 29, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content h4 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* line 35, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content .meta {
+  opacity: 0;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 40, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content .meta .viewall {
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid #ffffff;
+  width: 110px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 48, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content .meta .viewall:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 55, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content .meta-link {
+  display: inline-block;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 60, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item-content .meta-link:hover {
+  color: #c2a18a;
+}
+
+/* line 67, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item:hover #gridimg {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+/* line 72, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item:hover .gridd__item-content .meta {
+  opacity: 1;
+}
+
+/* line 76, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+.gridd__item:hover .gridd__item-content {
+  transform: translateY(-20px);
+}
+
+/* line 83, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_grid.scss */
+#gridimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

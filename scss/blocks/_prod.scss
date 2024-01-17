@@ -1,0 +1,19 @@
+.prod {
+    &-title {
+        font-size: 40px;
+        color: $black;
+    }
+
+    &-subtitle {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #c2a18a;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.text-center {
+    margin: 0 auto 50px;
+    text-align: center;
+}

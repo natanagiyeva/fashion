@@ -15,9 +15,24 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-  	font-family: 'Poppins', sans-serif;
   	font-weight: 600;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	
 }
 
 // import blocks
 @import "blocks/slider";
+@import "blocks/intro";
+@import "blocks/header";
+@import "blocks/slider2";
+@import "blocks/prod";
+@import "blocks/best";
+@import "blocks/grid";

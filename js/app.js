@@ -49,3 +49,34 @@ controls.forEach(control => {
         goToSlide(nextIndex);
     });
 });
+
+// Slider 2
+const slides2 = document.querySelectorAll('.slider2__item');
+
+function toggleSlide() {
+    slides2.forEach(slide => {
+        const img = slide.querySelector('.slider2__item__img img');
+        const card = slide.querySelector('.slider2__item__card');
+
+        if (slide.classList.contains('hidden')) {
+            slide.classList.remove('hidden');
+            img.classList.add('zoom');
+            card.classList.add('fade-up');
+        } else {
+            slide.classList.add('hidden');
+            img.classList.remove('zoom');
+            card.classList.remove('fade-up');
+        }
+    });
+}
+
+const controllers2 = document.querySelectorAll('.controls2 a');
+
+controllers2.forEach(controller2 => {
+    controller2.addEventListener('click', function(event) {
+        event.preventDefault();
+        toggleSlide();
+    });
+});
+
+setInterval(toggleSlide, 10000);
