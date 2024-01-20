@@ -80,3 +80,53 @@ controllers2.forEach(controller2 => {
 });
 
 setInterval(toggleSlide, 10000);
+
+// Slider 3
+$(document).ready(function(){
+    $('.slider3').slick({
+        
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        centerMode: true,
+        variableWidth: true
+    });
+
+    $('.slick-prev').text(''); 
+    $('.slick-next').text(''); 
+
+});
+
+// Video popup
+$(document).ready(function() {
+    $('.play-video-popup').click(function(e) {
+        e.preventDefault();
+        $('body').append('<div class="video-popup">' +
+            '<div class="video-popup-overlay"></div>' +
+            '<div class="video-popup-content">' +
+            '<iframe width="1000" height="600" src="https://www.youtube.com/embed/MLpWrANjFbI?si=LQ-9zsRbdxnkywVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' +
+            '<button class="video-popup-close"><i class="bi bi-x-lg"></i></button>' +
+            '</div>' +
+            '</div>');
+        $('.video-popup').fadeIn(300);
+
+        $('.video-popup-close, .video-popup-overlay').click(function() {
+            $('.video-popup').fadeOut(300, function() { $(this).remove(); });
+        });
+    });
+});
+
+// Slider 4
+$(document).ready(function(){
+    $('.slider4').slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: false,
+        variableWidth: false
+    });
+
+});

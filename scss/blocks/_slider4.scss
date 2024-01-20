@@ -1,0 +1,45 @@
+.slider4 {
+
+    &__item {
+        overflow: hidden;
+        margin: 5px;
+        & img {
+            width: 100%;
+
+            max-height: 82vh;
+            object-fit: cover;
+            @include tall;
+
+            &:hover {
+                transform: scale(1.1);
+
+            }
+        }
+    }
+}
+
+// Trend
+.trend {
+    &__item {
+        padding: 30px;
+        @include tall;
+
+        &:hover {
+            box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        & h4 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $black;
+        }
+
+        & p {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+}
