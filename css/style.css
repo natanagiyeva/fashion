@@ -201,14 +201,14 @@ a {
   width: 100%;
 }
 
-/* line 7, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 8, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__logo {
   position: relative;
   height: 120px;
   width: 120px;
 }
 
-/* line 12, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 13, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__logo img {
   position: absolute;
   top: 50%;
@@ -216,7 +216,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* line 21, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 22, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__nav ul {
   display: flex;
   justify-content: start;
@@ -224,7 +224,7 @@ a {
   margin: 0;
 }
 
-/* line 27, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 28, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__nav ul li {
   margin-right: 30px;
   font-size: 18px;
@@ -233,34 +233,34 @@ a {
   line-height: 120px;
 }
 
-/* line 34, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 35, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__nav ul li a {
   color: #ffffff;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 38, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 39, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__nav ul li a:hover {
   color: #c2a18a;
 }
 
-/* line 46, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 47, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__right {
   margin: auto 0;
 }
 
-/* line 49, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 50, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__right a {
   color: #ffffff;
 }
 
-/* line 53, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 54, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__right i {
   color: #ffffff;
   font-size: 24px;
 }
 
-/* line 60, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 61, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__search input {
   margin-right: 30px;
   background: transparent;
@@ -274,26 +274,26 @@ a {
   height: 30px;
 }
 
-/* line 72, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 73, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__search input::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-/* line 79, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 80, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__profile {
   display: block;
   margin-right: 30px;
 }
 
-/* line 85, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 86, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__cart {
   display: block;
   position: relative;
   margin-right: 30px;
 }
 
-/* line 92, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 93, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__cart-count {
   position: absolute;
   top: -5px;
@@ -308,7 +308,7 @@ a {
   font-size: 9px;
 }
 
-/* line 107, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 108, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__signup {
   display: block;
   margin-right: 30px;
@@ -321,9 +321,68 @@ a {
   line-height: 1;
 }
 
-/* line 118, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+/* line 119, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
 .header__signup:hover {
   background-color: #c2a18a;
+}
+
+/* line 125, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  height: 120px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* line 136, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__logo img {
+  width: 100px;
+}
+
+/* line 144, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__nav ul li a {
+  color: #333333;
+}
+
+/* line 147, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__nav ul li a:hover {
+  color: #c2a18a;
+}
+
+/* line 156, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__right a {
+  color: #333333;
+}
+
+/* line 160, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__right i {
+  color: #333333;
+}
+
+/* line 166, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__search input {
+  color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 170, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.header-sticky .header__search input::placeholder {
+  color: #333333;
+}
+
+/* line 178, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.blackbtn {
+  background-color: #c2a18a;
+  color: #ffffff;
+}
+
+/* line 182, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_header.scss */
+.blackbtn:hover {
+  background-color: #333333;
+  color: #ffffff !important;
 }
 
 /* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_slider2.scss */
@@ -910,6 +969,242 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: #767676;
+}
+
+/* line 2, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* line 9, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__form-input {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #e5e5e5;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #a0a0a0;
+  outline: none;
+}
+
+/* line 18, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__form-input::placeholder {
+  color: #a0a0a0;
+}
+
+/* line 22, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__form-btn {
+  height: 50px;
+  border: none;
+  padding: 15px 25px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 34, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__links {
+  color: #767676;
+  display: block;
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 42, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__links:hover {
+  color: #c2a18a;
+}
+
+/* line 47, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__two {
+  padding: 50px;
+  background-color: #F8F3F0;
+}
+
+/* line 52, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__social {
+  padding: 20px 0;
+}
+
+/* line 54, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__social a {
+  color: #c2a18a;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 58, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__social a:hover {
+  color: #333333;
+}
+
+/* line 62, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_footer.scss */
+.footer__social i {
+  display: inline-block;
+  font-size: 30px;
+}
+
+/* line 1, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.banner {
+  padding: 100px 0;
+  background: url(../img/bg-page1.webp) no-repeat center;
+}
+
+/* line 3, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.banner h2 {
+  color: #ffffff;
+}
+
+/* line 10, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.banner a {
+  color: #ffffff;
+}
+
+/* line 13, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.banner a:hover {
+  color: #c2a18a;
+}
+
+/* line 19, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropbtn {
+  color: #333333;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 27, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 33, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown-content {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* line 43, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown-content a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 50, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 52, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* line 56, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.dropdown:hover .dropbtn {
+  color: #c2a18a;
+}
+
+/* line 61, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__right {
+  display: flex;
+  justify-content: end;
+}
+
+/* line 64, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__right-icon {
+  padding: 0 10px;
+  font-size: 25px;
+  line-height: 1;
+}
+
+/* line 71, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item {
+  margin-bottom: 50px;
+}
+
+/* line 76, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item:hover .shop__item-img-act {
+  opacity: 1;
+  bottom: 8px;
+}
+
+/* line 81, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item:hover .shop__item-img {
+  filter: brightness(90%);
+}
+
+/* line 86, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-img {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 91, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-img-act {
+  opacity: 0;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 99, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-img-act a {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 7px 13px;
+  display: block;
+  margin: 0 7px;
+}
+
+/* line 111, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item img {
+  width: 100%;
+}
+
+/* line 115, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-content {
+  text-align: center;
+}
+
+/* line 117, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-content a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 123, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-content a:hover {
+  color: #c2a18a;
+}
+
+/* line 128, ../../../../../Users/faignaghiyev/Desktop/ZA/fashion/scss/blocks/_shop.scss */
+.shop__item-content p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #c2a18a;
 }
 
 /*# sourceMappingURL=style.css.map */

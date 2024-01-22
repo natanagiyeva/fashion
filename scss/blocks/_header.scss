@@ -1,4 +1,5 @@
 .header {
+
     position: absolute;
     z-index: 1;
     height: 120px;
@@ -118,5 +119,68 @@
         &:hover {
             background-color: $gold;
         }
+    }
+}
+
+.header-sticky {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    height: 120px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+
+    & .header__logo {
+
+        & img {
+            width: 100px;
+        }
+    }
+
+    & .header__nav {
+        & ul {
+            & li {
+                & a {
+                    color: $black;
+
+                    &:hover {
+                        color: $gold;
+                    }
+                }
+            }
+        }
+    }
+
+    & .header__right {
+        & a {
+            color: $black;
+        }
+
+        & i {
+            color: $black;
+        }
+    }
+
+    & .header__search {
+        & input {
+            color: $black;
+            border-bottom: 1px solid $black;
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+
+}
+
+.blackbtn {
+    background-color: $gold;
+    color: $w;
+
+    &:hover {
+        background-color: $black;
+        color: $w !important;
     }
 }

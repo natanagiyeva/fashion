@@ -1,0 +1,67 @@
+.footer {
+    &__form {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 30px;
+        border: none;
+
+        &-input {
+            width: 250px;
+            height: 50px;
+            border: 1px solid #e5e5e5;
+
+            padding: 0 20px;
+            font-size: 16px;
+            color: #a0a0a0;
+            outline: none;
+            &::placeholder {
+                color: #a0a0a0;
+            }
+        }
+        &-btn {
+
+            height: 50px;
+            border: none;
+            padding: 15px 25px;
+            background-color: $black;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__links {
+        color: $gray;
+        display: block;
+        line-height: 2;
+        font-size: 16px;
+        font-weight: 400;
+        @include tall;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+
+    &__two {
+        padding: 50px;
+        background-color: $light;
+    }
+
+    &__social {
+        padding: 20px 0;
+        & a {
+            color: $gold;
+            @include tall;
+
+            &:hover {
+                color: $black;
+            }
+        }
+        & i {
+            display: inline-block;
+            font-size: 30px;
+        }
+    }
+}
