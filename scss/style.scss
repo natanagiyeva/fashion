@@ -13,6 +13,12 @@ body {
 	margin: 0;
 }
 
+input, button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
   	font-weight: 600;
@@ -41,3 +47,5 @@ a {
 @import "blocks/slider4";
 @import "blocks/footer";
 @import "blocks/shop";
+@import "blocks/login";
+@import "blocks/sidebar";

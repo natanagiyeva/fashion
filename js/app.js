@@ -150,3 +150,80 @@ function myFunction() {
         stickyHeader.style.display = "none";
     }
 }
+
+// Login/Register modal5
+function openModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+}
+
+var modal = document.getElementById("modal");
+var tabItems = Array.from(document.querySelectorAll(".tab-item"));
+var tabContents = Array.from(document.querySelectorAll(".tab-content"));
+
+tabItems.forEach(function(tab) {
+    tab.addEventListener("click", function() {
+        var target = tab.getAttribute("data-tab-target");
+        tabItems.forEach(function(t) {
+            t.classList.remove("active2");
+        });
+        tabContents.forEach(function(c) {
+            c.classList.remove("active2");
+        });
+        tab.classList.add("active2");
+        document.querySelector(target).classList.add("active2");
+    });
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Sidebar cart
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        // Prevent default link behavior
+        event.preventDefault();
+        addItemToCart(this.dataset.id, this.dataset.name, this.dataset.price);
+        openNav();
+    });
+});
+
+document.getElementById('open-cart-btn').addEventListener('click', function() {
+    openNav();
+});
+
+function openNav() {
+    document.getElementById("sidebar").style.width = "350px";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("overlay").style.display = "none";
+}
+
+function addItemToCart(id, name, price) {
+    let cartItems = document.getElementById("cart-items");
+    let cartItem = document.createElement("div");
+    cartItem.classList.add("cart-item");
+    cartItem.innerHTML = `
+        <img class="cart-item-img" src="img/shop/${id}.webp" alt="${name}">
+        <p class="cart-item-title">${name}</p>
+        <span class="cart-item-price">${price}</span>
+        <button onclick="removeItemFromCart(this)">&times;</button>
+    `;
+    cartItems.appendChild(cartItem);
+}
+
+function removeItemFromCart(button) {
+    button.parentElement.remove();
+}

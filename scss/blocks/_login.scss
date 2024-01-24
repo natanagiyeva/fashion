@@ -1,0 +1,122 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+    &-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+    }
+
+    .close {
+        position: absolute;
+        background-color: $black;
+        right: -30px;
+        top: -30px;
+        color: $w;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        @include tall;
+        font-size: 30px;
+
+
+        &:hover,
+        &:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: $gold;
+        }
+    }
+}
+
+.tab {
+    &-content {
+        display: none;
+
+        &-fld {
+            width: 100%;
+            height: 60px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ebebeb;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $gray;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+            height: 60px;
+            background-color: $black;
+            border: none;
+            color: $w;
+            font-size: 20px;
+            @include tall;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $gold;
+            }
+        }
+
+        &-link {
+            color: $black;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+            @include tall;
+            margin-top: 20px;
+
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gold;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &-item {
+
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+}
+
+
+.active2 {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+}

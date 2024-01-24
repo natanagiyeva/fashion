@@ -52,14 +52,14 @@
 					<div class="header__search">
 						<input type="text" placeholder="Search">
 					</div>
-					<a href="#" class="header__profile">
+					<a href="#" class="header__profile" onclick="openModal()">
 							<i class="bi bi-person"></i>
 					</a>
-					<a class="header__cart" href="#">
+					<a class="header__cart" href="#" id="open-cart-btn">
 							<i class="bi bi-cart3"></i>
 							<span class="header__cart-count">3</span>
 					</a>
-					<a href="#" class="header__signup">Sign up</a>
+					<a href="#" class="header__signup" onclick="openModal()">Sign up</a>
 				</div>
 			</div>
 
@@ -90,14 +90,14 @@
 					<div class="header__search">
 						<input type="text" placeholder="Search">
 					</div>
-					<a href="#" class="header__profile">
+					<a href="#" class="header__profile" onclick="openModal()">
 							<i class="bi bi-person"></i>
 					</a>
-					<a class="header__cart" href="#">
+					<a class="header__cart" href="#" id="open-cart-btn">
 							<i class="bi bi-cart3"></i>
 							<span class="header__cart-count">3</span>
 					</a>
-					<a href="#" class="header__signup blackbtn">Sign up</a>
+					<a href="#" class="header__signup blackbtn" onclick="openModal()">Sign up</a>
 				</div>
 			</div>
 
@@ -208,7 +208,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="1" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -236,7 +236,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="2" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -264,7 +264,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="3" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -472,7 +472,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="4" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -500,7 +500,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="5" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -528,7 +528,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="6" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -556,7 +556,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="7" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -584,7 +584,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="8" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -612,7 +612,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="9" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -640,7 +640,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="10" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -668,7 +668,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="11" data-name="Strapless crop top" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -696,7 +696,7 @@
 							</div>
 							<div class="best__item-info-right">
 								<a href="#" data-tooltip="Add to favorites"><i class="bi bi-heart"></i></a>
-								<a href="#" data-tooltip="Add to cart"><i class="bi bi-cart3"></i></a>
+								<a href="#" data-tooltip="Add to cart" class="add-to-cart" data-id="12" data-name="Rustic Blouse" data-price="£49.90"><i class="bi bi-cart3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -827,6 +827,55 @@
 		</div>
 	</footer>
 
+
+	<!-- Modal register/login -->
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<ul class="tab-list">
+				<li class="tab-item active" data-tab-target="#login">
+					<i class="bi bi-person-check"></i>
+					Login
+				</li>
+				<li class="tab-item" data-tab-target="#register">
+					<i class="bi bi-person-add"></i>
+					Register
+				</li>
+			</ul>
+			<div id="login" class="tab-content active2">
+				<form>
+
+					<input class="tab-content-fld" type="text" id="username" name="username" placeholder="Username" required>
+
+					<input class="tab-content-fld"  type="password" id="password" name="password" placeholder="Password" required>
+					<input class="tab-content-btn"  type="submit" value="Log in">
+					<a href="#" class="tab-content-link">Lost your password</a>
+				</form>
+			</div>
+			<div id="register" class="tab-content">
+				<form>
+
+					<input class="tab-content-fld"  type="text" id="reg-username" name="username" placeholder="Username" required>
+
+					<input class="tab-content-fld"  type="email" id="email" name="email" placeholder="Email" required>
+
+					<input class="tab-content-fld"  type="password" id="reg-password" name="password" placeholder="Password" required>
+					<input class="tab-content-btn" type="submit" value="Register">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sidebar cart -->
+	<div id="sidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="sidebar-content">
+			<h2>Shopping Cart</h2>
+			<div id="cart-items"></div>
+		</div>
+	</div>
+
+	<div id="overlay" class="overlay"></div>
 
 	<!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
